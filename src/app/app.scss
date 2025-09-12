@@ -1,0 +1,62 @@
+.outlet{
+  background: url(../assets/background.jpeg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 84%;
+    content: " ";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -20;
+    margin-top: 20px;
+}
+.nav-bar {
+  padding: 0px;
+  border: 2px solid #ecb34e;
+  color: #ecb34e;
+  background: white;
+  border-radius: 6px;
+
+  .title {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: larger;
+    font-weight: 700;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .logo {
+    margin: 4px 12px;
+
+    img {
+      border-radius: 30px;
+      width: 60px;
+      height: 60px;
+      display: block;
+    }
+  }
+
+  .user-icon {
+    margin-right: 40px;
+  color: #ecb34e;
+
+  }
+
+}
+
+.loading-spinner {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(85, 84, 84, 0.7);
+  z-index: 1000;
+
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}

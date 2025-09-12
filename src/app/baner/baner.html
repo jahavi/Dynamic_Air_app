@@ -1,0 +1,19 @@
+@if(!success){
+<mat-error class="banner">
+  <mat-icon class="icon">error</mat-icon>
+  <span class="essage">{{msg}}
+  </span>
+  <mat-icon class="error-close" (click)="close()">close</mat-icon>
+
+</mat-error>
+}
+@else{
+<mat-hint class="banner green-banner">
+  <mat-icon class="icon">check_circle</mat-icon>
+  <span class="message">{{msg}}
+  </span>
+  <mat-icon class="close" (click)="close()">close</mat-icon>
+</mat-hint>
+}
+
+

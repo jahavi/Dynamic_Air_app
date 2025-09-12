@@ -1,0 +1,54 @@
+<mat-card appearance="outlined" class="login-card">
+  <mat-card-header class="login-header">
+    <mat-card-title>{{titel}}</mat-card-title>
+    @if(titel==='Create Account'){
+    <mat-icon class='close-button'(click)="cancelCreate()">close</mat-icon>
+    }
+  </mat-card-header>
+  <mat-card-content>
+    @if(bannerMessage){
+    <app-baner [success]="successBanner" [msg]="bannerMessage" (closeEvent)="closeError()"> </app-baner>
+    }
+    <form class="login-form" [formGroup]="loginForm">
+      @if(titel==='Create Account'){
+      <mat-form-field class="full-width">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="username">
+      </mat-form-field>
+      }
+
+      <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="pat@example.com" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions class="login-action">
+    <button mat-raised-button color="primary" type="submit" (click)="login()" [disabled]="titel==='Create Account'">Log
+      in</button>
+    <button mat-raised-button class="create-button" [textContent]="createAcc"
+      (click)="createAccount(createAcc)"></button>
+  </mat-card-actions>
+  <div class="separator">
+    <span>OR</span>
+  </div>
+  <button mat-stroked-button class="google-signin-button" (click)="signInWithGoogle()">
+    <img width="20px" alt="Google sign-in"
+      src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
+    <span>Sign in with Google</span>
+  </button>
+</mat-card>
+
+<!-- <mat-card appearance="outlined" class="social-card">
+  <mat-card-content>
+    <button mat-stroked-button class="google-signin-button" (click)="signInWithGoogle()">
+      <img width="20px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"/>
+      <span>Sign in with Google</span>
+    </button>
+  </mat-card-content>
+</mat-card> -->

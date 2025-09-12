@@ -1,0 +1,17 @@
+.banner{
+    display: flex;
+    border: 2px solid;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 10px 0px;
+    justify-content: space-between;
+
+    .message{
+        flex-grow: 1;
+        padding: 0 10px;
+        }
+}
+.green-banner{
+    border-color: #057e21;
+    color: #057e21;
+}
