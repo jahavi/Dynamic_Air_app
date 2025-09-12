@@ -1,5 +1,6 @@
-# project_flight_application
+# Dynamic Fly
 
+ # Task Details
 The task is to make an Angular web app deployed to Firebase. Firebase hosting is free and should be straightforward to use. Feel free to reach out if you run into trouble here. The app should include some flavor of authentication. Dealer's choice - user/pass, google, encrypted link, something else, your call. It should deny access to the form unless authentication is successful.
 
 Delivery should come with working credentials if applicable. Once authenticated, the user should be taken to a form where they enter flight details. Upon submission, the app should send a post request with the below specs and inform the user of their success (or failure). The UI should inform the user whether their request was successful and they should know they're done. Any additions or enhancements you want to make here are acceptable but not required.
