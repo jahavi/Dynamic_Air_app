@@ -37,8 +37,6 @@ A modern Angular-based flight booking application with Firebase integration. Thi
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -126,6 +124,14 @@ project_flight_application-main/
 
 ---
 
+## Firebase Hosting
+
+This project uses Firebase Hosting to deploy the Angular application.
+
+- **Live Site:**
+   -https://dynamic-air-42a4c.web.app
+
+---
 ## Features
 
 - User authentication (Firebase)
@@ -155,7 +161,20 @@ project_flight_application-main/
 
 ## Screenshots
 
-_Add your output screenshots here_
+**Login Screen**
+<img width="1920" height="1080" alt="Screenshot 2025-09-12 180612" src="https://github.com/user-attachments/assets/96a6edab-0aeb-4ed9-87e3-eb3ce3dd917b" />
+<img width="1920" height="1080" alt="Screenshot 2025-09-12 180706" src="https://github.com/user-attachments/assets/41084658-5517-48aa-9c4c-7711485f29aa" />
+**Signup Screen**
+<img width="1920" height="1080" alt="Screenshot 2025-09-12 181200" src="https://github.com/user-attachments/assets/72ae9ccf-2066-4f8e-ba80-50b1bc1b03db" />
+
+**Booking Screen**
+<img width="1920" height="1080" alt="Screenshot 2025-09-12 180815" src="https://github.com/user-attachments/assets/4ed8d285-0bce-4c64-88a6-564b9be67340" />
+
+**Booking Sucess/Failure**
+<img width="1920" height="1080" alt="Screenshot 2025-09-12 180831" src="https://github.com/user-attachments/assets/e2ff99b0-2b4c-4209-85f1-d40d52687152" />
+
+**Logout**
+<img width="1920" height="1080" alt="Screenshot 2025-09-12 180843" src="https://github.com/user-attachments/assets/f5d4b550-ede2-4db9-995e-19633df9776b" />
 
 ---
 
