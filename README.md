@@ -162,7 +162,7 @@ This project uses Firebase Hosting to deploy the Angular application.
 <img width="1920" height="1080" alt="Screenshot 2025-09-12 180612" src="https://github.com/user-attachments/assets/96a6edab-0aeb-4ed9-87e3-eb3ce3dd917b" />
 <img width="1920" height="1080" alt="Screenshot 2025-09-12 180706" src="https://github.com/user-attachments/assets/41084658-5517-48aa-9c4c-7711485f29aa" />
 **Signup Screen**
-<img width="1920" height="1080" alt="Screenshot 2025-09-12 181200" src="https://github.com/user-attachments/assets/72ae9ccf-2066-4f8e-ba80-50b1bc1b03db" />
+<img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/e40a7ac8-0f42-4d40-b343-e829d56a1cd8" />
 
 **Booking Screen**
 <img width="1920" height="1080" alt="Screenshot 2025-09-12 180815" src="https://github.com/user-attachments/assets/4ed8d285-0bce-4c64-88a6-564b9be67340" />
