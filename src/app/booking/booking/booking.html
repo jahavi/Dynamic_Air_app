@@ -1,63 +1,106 @@
 @if(showMsg && msgDetails){
-
-}
 <div class="banner">
-    <app-baner [success]="successBanner" [msg]="msgDetails" (closeEvent)="closeBaner()"> </app-baner>
+  <app-baner
+    [success]="successBanner"
+    [msg]="msgDetails"
+    (closeEvent)="closeBaner()"
+  >
+  </app-baner>
 </div>
+}
+
 <mat-card class="booking-card">
-    <mat-card-header>
-        <mat-card-title>Book Your Shuttle</mat-card-title>
-        <mat-card-subtitle>Please fill out your arrival details</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-        <form class="booking-form" [formGroup]="bookingForm" (ngSubmit)="submitBooking()">
-            <div class="arilne">
-                <mat-form-field appearance="outline">
-                    <mat-label>Airline</mat-label>
-                    <mat-select formControlName="airline">
-                        @for(airline of airlines; track airline){
-                        <mat-option [value]="airline">{{ airline }}</mat-option>
+  <mat-card-header>
+    <mat-card-title>Book Your Shuttle</mat-card-title>
+    <mat-card-subtitle>Please fill out your arrival details</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <form
+      class="booking-form"
+      [formGroup]="bookingForm"
+      (ngSubmit)="submitBooking()"
+    >
+      <div class="arilne">
+        <mat-form-field appearance="outline">
+          <mat-label>Airline</mat-label>
+          <mat-select formControlName="airline">
+            @for(airline of airlines; track airline){
+            <mat-option [value]="airline">{{ airline }}</mat-option>
 
-                        }
-                    </mat-select>
-                </mat-form-field>
-            </div>
-            <div class="date">
-                <mat-form-field>
-                    <mat-label>Arrival Date</mat-label>
-                    <input matInput [matDatepicker]="picker" formControlName="arrivalDate">
-                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-datepicker #picker></mat-datepicker>
-                </mat-form-field>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="date">
+        <mat-form-field>
+          <mat-label>Arrival Date</mat-label>
+          <input
+            matInput
+            [matDatepicker]="picker"
+            formControlName="arrivalDate"
+          />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
 
-                <mat-form-field>
-                    <mat-label>Arrival Time</mat-label>
-                    <input matInput [matTimepicker]="timepicker" formControlName="arrivalTime" readonly>
-                    <mat-timepicker-toggle matIconSuffix [for]="timepicker" /><mat-timepicker #timepicker />
-                </mat-form-field>
-            </div>
-            <div class="details">
-                <mat-form-field>
-                    <mat-label>Flight Number</mat-label>
-                    <input matInput placeholder="e.g., DA123" formControlName="flightNumber">
-                </mat-form-field>
+        <mat-form-field>
+          <mat-label>Arrival Time</mat-label>
+          <input
+            matInput
+            [matTimepicker]="timepicker"
+            formControlName="arrivalTime"
+            readonly
+          />
+          <mat-timepicker-toggle
+            matIconSuffix
+            [for]="timepicker"
+          /><mat-timepicker #timepicker />
+        </mat-form-field>
+      </div>
+      <div class="details">
+        <mat-form-field>
+          <mat-label>Flight Number</mat-label>
+          <input
+            matInput
+            placeholder="e.g., DA123"
+            formControlName="flightNumber"
+          />
+        </mat-form-field>
 
-                <mat-form-field>
-                    <mat-label>Number of Guests</mat-label>
-                    <input matInput type="number" min="1" placeholder="1" formControlName="numOfGuests">
-                </mat-form-field>
-            </div>
-            <div class="comments">
-
-                <mat-form-field>
-                    <mat-label>Comments</mat-label>
-                    <textarea matInput placeholder="e.g., any special requests" formControlName="comments"></textarea>
-                </mat-form-field>
-            </div>
-        </form>
-    </mat-card-content>
-    <mat-card-actions class="action-button">
-        <button mat-raised-button color="primary" (click)="submitBooking()" [disabled]="bookingForm.invalid">Submit
-            Booking</button>
-    </mat-card-actions>
+        <mat-form-field>
+          <mat-label>Number of Guests</mat-label>
+          <input
+            matInput
+            type="number"
+            min="1"
+            placeholder="1"
+            formControlName="numOfGuests"
+          />
+        </mat-form-field>
+      </div>
+      <div class="comments">
+        <mat-form-field>
+          <mat-label>Comments</mat-label>
+          <textarea
+            matInput
+            placeholder="e.g., any special requests"
+            formControlName="comments"
+          ></textarea>
+        </mat-form-field>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions class="action-button">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="submitBooking()"
+      [disabled]="bookingForm.invalid"
+    >
+      Submit Booking
+    </button>
+  </mat-card-actions>
 </mat-card>
