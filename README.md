@@ -114,9 +114,7 @@ project_flight_application-main/
    ```powershell
    npm install
    ```
-3. **Configure Firebase:**
-   - Update `src/app/auth-service/firebase/firebase-config.ts` with your Firebase project credentials.
-4. **Run the application:**
+3. **Run the application:**
    ```powershell
    ng serve
    ```
@@ -155,7 +153,6 @@ This project uses Firebase Hosting to deploy the Angular application.
 
 - Register/login to access booking features
 - Book flights and view booking history
-- Admin features (if implemented)
 
 ---
 
